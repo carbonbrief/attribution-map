@@ -1,11 +1,11 @@
-{
+var geojson = {
    "type": "FeatureCollection",
    "features": [
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -86.534,35.55 ]
+       "coordinates":  [ -86.534,35.550 ]
     },
     "properties": {
     "location":"Eastern United States",
@@ -22,7 +22,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 144.975,-37.82 ]
+       "coordinates":  [ 144.975,-37.820 ]
     },
     "properties": {
     "location":"Melbourne",
@@ -39,7 +39,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 9.292,55.6 ]
+       "coordinates":  [ 9.292,55.600 ]
     },
     "properties": {
     "location":"North side of the Alps to southern Norway",
@@ -73,7 +73,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 105.118756,61.52401 ]
+       "coordinates":  [ 105.119,61.524 ]
     },
     "properties": {
     "location":"Russia",
@@ -90,7 +90,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 105.318756,61.52401 ]
+       "coordinates":  [ 105.319,61.524 ]
     },
     "properties": {
     "location":"Russia",
@@ -107,7 +107,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -1.09,52.571 ]
+       "coordinates":  [ -1.090,52.571 ]
     },
     "properties": {
     "location":"Central England",
@@ -124,7 +124,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -91.05,37.284 ]
+       "coordinates":  [ -91.050,37.284 ]
     },
     "properties": {
     "location":"Central & eastern United States",
@@ -141,7 +141,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -86.334,35.55 ]
+       "coordinates":  [ -86.334,35.550 ]
     },
     "properties": {
     "location":"Eastern United States",
@@ -158,7 +158,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 132.975136,-25.274398 ]
+       "coordinates":  [ 132.975,-25.274 ]
     },
     "properties": {
     "location":"Australia",
@@ -175,7 +175,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 165.089,-21.32 ]
+       "coordinates":  [ 165.089,-21.320 ]
     },
     "properties": {
     "location":"Australia & far west Pacific",
@@ -192,7 +192,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.175136,-25.274398 ]
+       "coordinates":  [ 133.175,-25.274 ]
     },
     "properties": {
     "location":"Australia",
@@ -209,7 +209,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.375136,-25.274398 ]
+       "coordinates":  [ 133.375,-25.274 ]
     },
     "properties": {
     "location":"Australia",
@@ -226,7 +226,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.575136,-25.274398 ]
+       "coordinates":  [ 133.575,-25.274 ]
     },
     "properties": {
     "location":"Australia",
@@ -260,7 +260,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 138.052924,36.204824 ]
+       "coordinates":  [ 138.053,36.205 ]
     },
     "properties": {
     "location":"Japan",
@@ -277,7 +277,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 112,28 ]
+       "coordinates":  [ 112.000,28.000 ]
     },
     "properties": {
     "location":"China 24°–33°N, 102.5°–122.5°E",
@@ -294,7 +294,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 5.66,47.086 ]
+       "coordinates":  [ 5.660,47.086 ]
     },
     "properties": {
     "location":"Western Europe",
@@ -362,7 +362,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -63.616672,-38.416097 ]
+       "coordinates":  [ -63.617,-38.416 ]
     },
     "properties": {
     "location":"Argentina",
@@ -413,7 +413,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 120,40 ]
+       "coordinates":  [ 120.000,40.000 ]
     },
     "properties": {
     "location":" Northern China 30°–55°N, 105°–135°E",
@@ -430,7 +430,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 153.0351,-27.455 ]
+       "coordinates":  [ 153.035,-27.455 ]
     },
     "properties": {
     "location":"Brisbane",
@@ -447,7 +447,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 138.6,-34.928 ]
+       "coordinates":  [ 138.600,-34.928 ]
     },
     "properties": {
     "location":"Adelaide",
@@ -464,7 +464,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.775136,-25.274398 ]
+       "coordinates":  [ 133.775,-25.274 ]
     },
     "properties": {
     "location":"Australia",
@@ -481,7 +481,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 133.975136,-25.274398 ]
+       "coordinates":  [ 133.975,-25.274 ]
     },
     "properties": {
     "location":"Australia",
@@ -498,7 +498,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -1.29,52.571 ]
+       "coordinates":  [ -1.290,52.571 ]
     },
     "properties": {
     "location":"Central England",
@@ -515,7 +515,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -97.363461,31.054487 ]
+       "coordinates":  [ -97.363,31.054 ]
     },
     "properties": {
     "location":"Texas",
@@ -532,7 +532,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -42.1,23.4 ]
+       "coordinates":  [ -42.100,23.400 ]
     },
     "properties": {
     "location":"Global temperature",
@@ -549,7 +549,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -42.3,23.4 ]
+       "coordinates":  [ -42.300,23.400 ]
     },
     "properties": {
     "location":"Global temperature",
@@ -583,7 +583,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 5,52 ]
+       "coordinates":  [ 5.000,52.000 ]
     },
     "properties": {
     "location":"Central Europe, averaged over 4 sites: 52°06’N, 5°11’E; 50°55.5’N, 11°35’E; 53°52’N, 27°32’E; 48°14’N, 16°21’E",
@@ -600,7 +600,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 20,50 ]
+       "coordinates":  [ 20.000,50.000 ]
     },
     "properties": {
     "location":"Central Europe 45°–55°N, 0°–35°E",
@@ -617,7 +617,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 30.802498,26.820553 ]
+       "coordinates":  [ 30.802,26.821 ]
     },
     "properties": {
     "location":"Egypt",
@@ -651,7 +651,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 111.209,35.6199 ]
+       "coordinates":  [ 111.209,35.620 ]
     },
     "properties": {
     "location":"N. W China, Xinjiang Autonomous Region",
@@ -685,7 +685,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 138.252924,36.204824 ]
+       "coordinates":  [ 138.253,36.205 ]
     },
     "properties": {
     "location":"Japan",
@@ -702,7 +702,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 120,-5 ]
+       "coordinates":  [ 120.000,-5.000 ]
     },
     "properties": {
     "location":"Indonesia 0°–11°S, 95°–141°E",
@@ -736,7 +736,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 134.175136,-25.274398 ]
+       "coordinates":  [ 134.175,-25.274 ]
     },
     "properties": {
     "location":"Australia",
@@ -770,7 +770,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 15.46,54.53 ]
+       "coordinates":  [ 15.460,54.53 ]
     },
     "properties": {
     "location":"Europe",
@@ -787,7 +787,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -42.5,23.4 ]
+       "coordinates":  [ -42.500,23.400 ]
     },
     "properties": {
     "location":"Global",
@@ -804,7 +804,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -42.7,23.4 ]
+       "coordinates":  [ -42.700,23.400 ]
     },
     "properties": {
     "location":"Global",
@@ -838,7 +838,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 2.213749,46.227638 ]
+       "coordinates":  [ 2.214,46.228 ]
     },
     "properties": {
     "location":"France",
@@ -855,7 +855,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -42.9,23.4 ]
+       "coordinates":  [ -42.900,23.400 ]
     },
     "properties": {
     "location":"10°S–90°N, 55°E–170°W",
@@ -872,7 +872,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 100.992541,15.870032 ]
+       "coordinates":  [ 100.993,15.870 ]
     },
     "properties": {
     "location":"Thailand",
@@ -906,7 +906,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 16,42 ]
+       "coordinates":  [ 16.000,42.000 ]
     },
     "properties": {
     "location":"Euro-Mediterranean,  8°–24°E, 36°–48°N",
@@ -923,7 +923,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 127.766922,35.907757 ]
+       "coordinates":  [ 127.767,35.908 ]
     },
     "properties": {
     "location":"South Korea",
@@ -940,7 +940,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 100,55 ]
+       "coordinates":  [ 100.000,55.000 ]
     },
     "properties": {
     "location":"Northeast China ( 80°–120°E and 40°–70°N)",
@@ -991,7 +991,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 105.518756,61.52401 ]
+       "coordinates":  [ 105.519,61.524 ]
     },
     "properties": {
     "location":"Russia",
@@ -1008,7 +1008,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -100.57,39.41 ]
+       "coordinates":  [ -100.570,39.410 ]
     },
     "properties": {
     "location":"Central US",
@@ -1025,7 +1025,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 138.452924,36.204824 ]
+       "coordinates":  [ 138.453,36.205 ]
     },
     "properties": {
     "location":"Japan",
@@ -1042,7 +1042,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.681564,36.116203 ]
+       "coordinates":  [ -119.682,36.116 ]
     },
     "properties": {
     "location":"California",
@@ -1059,7 +1059,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -97.563461,31.054487 ]
+       "coordinates":  [ -97.563,31.054 ]
     },
     "properties": {
     "location":"Texas",
@@ -1076,7 +1076,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 5.86,47.086 ]
+       "coordinates":  [ 5.860,47.086 ]
     },
     "properties": {
     "location":"Western Europe",
@@ -1110,7 +1110,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 120,40 ]
+       "coordinates":  [ 120.000,40.000 ]
     },
     "properties": {
     "location":"Northeast Asia 40°N, 120°E",
@@ -1127,7 +1127,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 40.489673,9.145 ]
+       "coordinates":  [ 40.490,9.145 ]
     },
     "properties": {
     "location":"Ethiopia",
@@ -1144,7 +1144,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -63.524,-4.67 ]
+       "coordinates":  [ -63.524,-4.670 ]
     },
     "properties": {
     "location":"South Amazon",
@@ -1161,7 +1161,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -5.626,40.13 ]
+       "coordinates":  [ -5.626,40.130 ]
     },
     "properties": {
     "location":"Iberian Peninsula",
@@ -1212,7 +1212,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 134.375136,-25.274398 ]
+       "coordinates":  [ 134.375,-25.274 ]
     },
     "properties": {
     "location":"Australia",
@@ -1229,7 +1229,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.081564,36.116203 ]
+       "coordinates":  [ -119.082,36.116 ]
     },
     "properties": {
     "location":"California",
@@ -1314,7 +1314,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.281564,36.116203 ]
+       "coordinates":  [ -119.282,36.116 ]
     },
     "properties": {
     "location":"California",
@@ -1331,7 +1331,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.481564,36.116203 ]
+       "coordinates":  [ -119.482,36.116 ]
     },
     "properties": {
     "location":"California",
@@ -1348,7 +1348,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.681564,36.116203 ]
+       "coordinates":  [ -119.682,36.116 ]
     },
     "properties": {
     "location":"California",
@@ -1382,7 +1382,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 40.689673,9.145 ]
+       "coordinates":  [ 40.690,9.145 ]
     },
     "properties": {
     "location":"Ethiopia",
@@ -1416,7 +1416,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 120,-5 ]
+       "coordinates":  [ 120.000,-5.000 ]
     },
     "properties": {
     "location":"Indonesia 0°–11°S, 95°–141°E",
@@ -1467,7 +1467,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -120.37,45.772 ]
+       "coordinates":  [ -120.370,45.772 ]
     },
     "properties": {
     "location":"Oregon and Washington",
@@ -1535,7 +1535,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -104.04,46.378 ]
+       "coordinates":  [ -104.040,46.378 ]
     },
     "properties": {
     "location":"Great Plains",
@@ -1552,7 +1552,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -112.551,47.78 ]
+       "coordinates":  [ -112.551,47.780 ]
     },
     "properties": {
     "location":"Northern High Plains, Montana and the Dakotas",
@@ -1569,7 +1569,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 42,0 ]
+       "coordinates":  [ 42.000,0.000 ]
     },
     "properties": {
     "location":"Tanzania, Ethiopia, Kenya, and Somalia (35°–50°E, 12°S–9°N)",
@@ -1603,7 +1603,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -104.24,46.378 ]
+       "coordinates":  [ -104.240,46.378 ]
     },
     "properties": {
     "location":"Great Plains, US",
@@ -1620,7 +1620,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -97.763461,31.054487 ]
+       "coordinates":  [ -97.763,31.054 ]
     },
     "properties": {
     "location":"Texas",
@@ -1637,7 +1637,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -119.881564,36.116203 ]
+       "coordinates":  [ -119.882,36.116 ]
     },
     "properties": {
     "location":"California",
@@ -1654,7 +1654,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -120.081564,36.116203 ]
+       "coordinates":  [ -120.082,36.116 ]
     },
     "properties": {
     "location":"California",
@@ -1688,7 +1688,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 103.819836,1.352083 ]
+       "coordinates":  [ 103.820,1.352 ]
     },
     "properties": {
     "location":"Singapore",
@@ -1705,7 +1705,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -51.92528,-14.235004 ]
+       "coordinates":  [ -51.925,-14.235 ]
     },
     "properties": {
     "location":"Brazil",
@@ -1739,7 +1739,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 50,10 ]
+       "coordinates":  [ 50.000,10.000 ]
     },
     "properties": {
     "location":"Within box 10°W–30°E, 38°–60°N",
@@ -1807,7 +1807,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 5,40 ]
+       "coordinates":  [ 5.000,40.000 ]
     },
     "properties": {
     "location":"Southern Europe 10°W–20°E; 35°–49°N",
@@ -1841,7 +1841,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 106.8294,-6.1744 ]
+       "coordinates":  [ 106.829,-6.174 ]
     },
     "properties": {
     "location":"Jakarta",
@@ -1858,7 +1858,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -70.56,-45.851 ]
+       "coordinates":  [ -70.560,-45.851 ]
     },
     "properties": {
     "location":"Southern South America",
@@ -1909,7 +1909,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -3.783,52.13 ]
+       "coordinates":  [ -3.783,52.130 ]
     },
     "properties": {
     "location":"Wales",
@@ -1977,7 +1977,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -113.426,42.92 ]
+       "coordinates":  [ -113.426,42.920 ]
     },
     "properties": {
     "location":"North-central & eastern US",
@@ -2028,7 +2028,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 104.195397,35.86166 ]
+       "coordinates":  [ 104.195,35.862 ]
     },
     "properties": {
     "location":"China",
@@ -2045,7 +2045,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -105.27,40.014 ]
+       "coordinates":  [ -105.270,40.014 ]
     },
     "properties": {
     "location":"Boulder, Colorado",
@@ -2079,7 +2079,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -91.867805,31.169546 ]
+       "coordinates":  [ -91.868,31.170 ]
     },
     "properties": {
     "location":"Louisiana",
@@ -2147,7 +2147,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -75.015152,-9.189967 ]
+       "coordinates":  [ -75.015,-9.190 ]
     },
     "properties": {
     "location":"Peru",
@@ -2164,7 +2164,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -58.3,34.2 ]
+       "coordinates":  [ -58.300,34.200 ]
     },
     "properties": {
     "location":"Uruguay river basin",
@@ -2181,7 +2181,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 91,24.5 ]
+       "coordinates":  [ 91.000,24.500 ]
     },
     "properties": {
     "location":"Northeast Bangladesh  (90.5°–92.5°E, 24°–25.5°N)",
@@ -2198,7 +2198,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 118,28 ]
+       "coordinates":  [ 118.000,28.000 ]
     },
     "properties": {
     "location":"Southeast China ( 24°–32°N, 107°–124°E)",
@@ -2215,7 +2215,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 100.792541,15.870032 ]
+       "coordinates":  [ 100.793,15.870 ]
     },
     "properties": {
     "location":"Thailand",
@@ -2334,7 +2334,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -3.04,55.38 ]
+       "coordinates":  [ -3.040,55.38 ]
     },
     "properties": {
     "location":"UK",
@@ -2351,7 +2351,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 8.675277,9.081999 ]
+       "coordinates":  [ 8.675,9.082 ]
     },
     "properties": {
     "location":"Nigeria",
@@ -2368,7 +2368,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 78.96288,20.593684 ]
+       "coordinates":  [ 78.963,20.594 ]
     },
     "properties": {
     "location":"India",
@@ -2385,7 +2385,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -116.214,33.53 ]
+       "coordinates":  [ -116.214,33.530 ]
     },
     "properties": {
     "location":"Southern California",
@@ -2453,7 +2453,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -3.24,55.38 ]
+       "coordinates":  [ -3.240,55.38 ]
     },
     "properties": {
     "location":"UK",
@@ -2470,7 +2470,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -1.29,52.571 ]
+       "coordinates":  [ -1.290,52.571 ]
     },
     "properties": {
     "location":"Central England",
@@ -2521,7 +2521,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -10.22,83.82 ]
+       "coordinates":  [ -10.220,83.82 ]
     },
     "properties": {
     "location":"Arctic",
@@ -2538,7 +2538,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -74,44 ]
+       "coordinates":  [ -74.000,44.000 ]
     },
     "properties": {
     "location":"North Eastern US 40°– 48°N, 83°–65°W",
@@ -2589,7 +2589,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 15.66,54.53 ]
+       "coordinates":  [ 15.660,54.53 ]
     },
     "properties": {
     "location":"Europe",
@@ -2606,7 +2606,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 4.89,52.373 ]
+       "coordinates":  [ 4.890,52.373 ]
     },
     "properties": {
     "location":"The Netherlands",
@@ -2623,7 +2623,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -0.071389,-75.250973 ]
+       "coordinates":  [ -0.071,-75.251 ]
     },
     "properties": {
     "location":"Antarctica",
@@ -2657,7 +2657,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -10.42,83.82 ]
+       "coordinates":  [ -10.420,83.82 ]
     },
     "properties": {
     "location":"Arctic",
@@ -2674,7 +2674,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -10.62,83.82 ]
+       "coordinates":  [ -10.620,83.82 ]
     },
     "properties": {
     "location":"Arctic",
@@ -2708,7 +2708,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 119.131,-26.08 ]
+       "coordinates":  [ 119.131,-26.080 ]
     },
     "properties": {
     "location":"Western Australia",
@@ -2725,7 +2725,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -86.734,35.55 ]
+       "coordinates":  [ -86.734,35.550 ]
     },
     "properties": {
     "location":"Eastern US",
@@ -2742,7 +2742,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -77,38 ]
+       "coordinates":  [ -77.000,38.000 ]
     },
     "properties": {
     "location":"Mid (35°–40°N, 83°–72°W) and South (25°–35°N, 89°–75°W)",
@@ -2759,7 +2759,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -175,0 ]
+       "coordinates":  [ -175.000,0.000 ]
     },
     "properties": {
     "location":"Equatorial Central Pacific, Niño-4 region",
@@ -2793,7 +2793,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 15.86,54.53 ]
+       "coordinates":  [ 15.860,54.53 ]
     },
     "properties": {
     "location":"Europe",
@@ -2827,7 +2827,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -143.315,37.34 ]
+       "coordinates":  [ -143.315,37.340 ]
     },
     "properties": {
     "location":"NE Pacific",
@@ -2878,7 +2878,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -143.115,37.34 ]
+       "coordinates":  [ -143.115,37.340 ]
     },
     "properties": {
     "location":"NE Pacific",
@@ -2929,7 +2929,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -155.6,0 ]
+       "coordinates":  [ -155.600,0.000 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -2946,7 +2946,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -155.4,0 ]
+       "coordinates":  [ -155.400,0.000 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -3031,7 +3031,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 158.14,-42.394 ]
+       "coordinates":  [ 158.140,-42.394 ]
     },
     "properties": {
     "location":"Tasman Sea",
@@ -3048,7 +3048,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 158.24,-42.394 ]
+       "coordinates":  [ 158.240,-42.394 ]
     },
     "properties": {
     "location":"Tasman Sea (west of Tasmania to east of New Zealand)",
@@ -3065,7 +3065,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -99.438828,44.299782 ]
+       "coordinates":  [ -99.439,44.300 ]
     },
     "properties": {
     "location":"South Dakota",
@@ -3082,7 +3082,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -100.31,35.632 ]
+       "coordinates":  [ -100.310,35.632 ]
     },
     "properties": {
     "location":"N. America",
@@ -3099,7 +3099,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -31.87,52.19 ]
+       "coordinates":  [ -31.870,52.190 ]
     },
     "properties": {
     "location":"North Atlantic",
@@ -3116,7 +3116,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 147.31,20.135 ]
+       "coordinates":  [ 147.310,20.135 ]
     },
     "properties": {
     "location":"West Pacific",
@@ -3150,7 +3150,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 84.124008,28.394857 ]
+       "coordinates":  [ 84.124,28.395 ]
     },
     "properties": {
     "location":"Nepal",
@@ -3167,7 +3167,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -157.498337,21.094318 ]
+       "coordinates":  [ -157.498,21.094 ]
     },
     "properties": {
     "location":"Hawaii",
@@ -3235,7 +3235,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -3.64,55.38 ]
+       "coordinates":  [ -3.640,55.38 ]
     },
     "properties": {
     "location":"UK",
@@ -3252,7 +3252,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -30,145 ]
+       "coordinates":  [ 145.000,-30.000 ]
     },
     "properties": {
     "location":"Eastern Australia (east of 141°E, between 20° and 38°S)",
@@ -3269,7 +3269,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -120.281564,36.116203 ]
+       "coordinates":  [ -120.282,36.116 ]
     },
     "properties": {
     "location":"California",
@@ -3286,7 +3286,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -152.404419,61.370716 ]
+       "coordinates":  [ -152.404,61.371 ]
     },
     "properties": {
     "location":"Alaska",
@@ -3303,7 +3303,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -106.346771,56.130366 ]
+       "coordinates":  [ -106.347,56.130 ]
     },
     "properties": {
     "location":"Canada",
@@ -3320,7 +3320,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 134.575136,-25.274398 ]
+       "coordinates":  [ 134.575,-25.274 ]
     },
     "properties": {
     "location":"Australia",
@@ -3354,7 +3354,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 6.06,47.086 ]
+       "coordinates":  [ 6.060,47.086 ]
     },
     "properties": {
     "location":"Western Europe",
@@ -3371,7 +3371,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 16.06,54.53 ]
+       "coordinates":  [ 16.060,54.53 ]
     },
     "properties": {
     "location":"Europe",
@@ -3405,7 +3405,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -155.2,0 ]
+       "coordinates":  [ -155.200,0.000 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -3422,7 +3422,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -155,0 ]
+       "coordinates":  [ -155.000,0.000 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -3439,7 +3439,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -154.8,0 ]
+       "coordinates":  [ -154.800,0.000 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -3456,7 +3456,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -154.6,0 ]
+       "coordinates":  [ -154.600,0.000 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",

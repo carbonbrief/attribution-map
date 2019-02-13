@@ -18,8 +18,10 @@ body {
     height: 25px;
     border-radius: 50%;
     cursor: pointer;
+    text-align: center;
 }
 
-i {
-    color: white;
+.marker i {
+    color: white;             
+    margin-top: 6px;
 }

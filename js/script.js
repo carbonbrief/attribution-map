@@ -19,7 +19,7 @@ var icons = {
     "Storm": "fas fa-bolt",
     "Wildfire": "fas fa-fire-alt",
     "Atmosphere": "fas fa-cloud",
-    "Ecosystem function": "fas fa-leaf",
+    "Ecosystem function": "fas fa-seedling",
     "Coral bleaching": "fas fa-fish",
     "El Nino": "fas fa-globe-asia"
 };
@@ -49,7 +49,7 @@ map.on('load', function() {
         // create a HTML element for each feature
         var el = document.createElement('div');
         el.className = 'marker';
-        el.innerHTML = '<i class="' + symbol + '" aria-hidden="true"></i>';
+        el.innerHTML = '<i class="' + symbol + '"></i>';
 
         // make a marker for each feature and add to the map
         new mapboxgl.Marker(el)

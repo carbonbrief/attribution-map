@@ -69,7 +69,12 @@ map.on('load', function() {
         // create a HTML element for each feature
         var el = document.createElement('div');
         el.className = 'marker ' + typeTag + " " + impactTag + " " + year;
-        el.innerHTML = '<i class="' + symbol + '"></i>';
+
+        if (typeTag == "drought") {
+            el.innerHTML = "<img class='marker-icon' src='img/drought.svg'></img>";
+        } else {
+            el.innerHTML = '<i class="' + symbol + '"></i>';
+        }
 
         // make a marker for each feature and add to the map
         new mapboxgl.Marker(el)

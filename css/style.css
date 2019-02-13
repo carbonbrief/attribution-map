@@ -28,7 +28,6 @@ body {
 }
 
 .marker {
-    background-color: #2f8fce;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -36,12 +35,20 @@ body {
     text-align: center;
 }
 
+/* styling for drought icon */
+.marker-icon {
+    width: 17px;
+    height: 17px;
+    vertical-align: text-top;
+    margin-top: 3px;
+}
+
 .human {
-    background-color: #a14a7b;
+    background-color: #dd8a3e;
 }
 
 .natural {
-    background-color: #efc530;
+    background-color: #2f8fce;
 }
 
 .unsure {

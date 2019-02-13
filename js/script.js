@@ -55,12 +55,6 @@ map.on('load', function() {
         "data": geojson
     });
 
-    // map.addLayer({
-    //     "id": "studies",
-    //     "type": "symbol",
-    //     "source": "geojson"
-    // });
-
     geojson.features.forEach(function(feature) {
 
         let type = feature.properties['type'];
@@ -84,7 +78,46 @@ map.on('load', function() {
         .setLngLat(feature.geometry.coordinates)
         .addTo(map);
 
-        
+    });
+
+    let humanValue = "all";
+    let impactValue = "all";
+
+    function filterMarkers () {
+
+        if (humanValue == "all" || impactValue == "all") {
+            // write code here
+            if (humanValue == "all" && impactValue !== "all") {
+                $(".marker").css("visibility", "hidden");
+                $("." + impactValue).css("visibility", "visible");
+            } else if (impactValue == "all" && humanValue !== "all") {
+                $(".marker").css("visibility", "hidden");
+                $("." + humanValue).css("visibility", "visible");
+            } else {
+                $(".marker").css("visibility", "visible");
+            }
+
+        } else {
+            // hide all marks and then make those with the selected tags visible
+            $(".marker").css("visibility", "hidden");
+            $("." + humanValue + "." + impactValue).css("visibility", "visible");
+        }
+
+    }
+
+    document.getElementById('selectorHuman').addEventListener('change', function(e) {
+
+        humanValue = e.target.value;
+        console.log(humanValue);
+        filterMarkers();
+
+    });
+    
+    document.getElementById('selectorImpact').addEventListener('change', function(e) {
+
+        impactValue = e.target.value;
+        console.log(impactValue);
+        filterMarkers();
 
     });
 

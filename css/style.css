@@ -12,6 +12,21 @@ body {
     height: 800px;
 }
 
+#console {
+    position: absolute;
+    width: 400px;
+    margin: 10px;
+    padding: 10px 20px;
+    padding-right: 35px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.session {
+    margin-bottom: 15px;
+}
+
 .marker {
     background-color: #2f8fce;
     width: 30px;
@@ -19,6 +34,18 @@ body {
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
+}
+
+.human {
+    background-color: #a14a7b;
+}
+
+.natural {
+    background-color: #efc530;
+}
+
+.unsure {
+    background-color: #999999;
 }
 
 .marker i {

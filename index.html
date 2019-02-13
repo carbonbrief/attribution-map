@@ -15,7 +15,30 @@
     </head>
 
     <body>
-        <div id="console"></div>
+        <div id="console">
+            <div class="session">
+                <select id='selectorHuman' class="selector">
+                    <option value='all' selected='selected'>All</option>
+                    <option value='human' >Human influence found</option>
+                    <option value='natural' >No human influence found</option>
+                    <option value='unsure' >Inconclusive</option>
+                </select>
+                <select id='selectorImpact' class="selector">
+                    <option value='all' selected='selected'>All</option>
+                    <option value='heat' >Heat</option>
+                    <option value='sun' >Sunshine</option>
+                    <option value='drought' >Drought</option>
+                    <option value='flood' >Rain & flooding</option>
+                    <option value='cold' >Cold, snow & ice</option>
+                    <option value='ocean' >Oceans</option>
+                    <option value='storm' >Storm</option>
+                    <option value='fire' >Wildfire</option>
+                    <option value='cloud' >Atmosphere</option>
+                    <option value='eco' >Ecosystem function</option>
+                    <option value='nino' >El Niño</option>
+                </select>
+            </div>
+        </div>
         <div id="map"></div>
         <script src="data/studies.js"></script>
         <script src="js/script.js"></script>

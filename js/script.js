@@ -24,6 +24,28 @@ var icons = {
     "El Nino": "fas fa-globe-asia"
 };
 
+var typeTags = {
+    "Heat": "heat",
+    "Sunshine": "sun",
+    "Drought": "drought",
+    "Rain & flooding": "flood",
+    "Cold, snow & ice": "cold",
+    "Oceans": "ocean",
+    "Storm": "storm",
+    "Wildfire": "fire",
+    "Atmosphere": "cloud",
+    "Ecosystem function": "eco",
+    "Coral bleaching": "coral",
+    "El Nino": "nino"
+};
+
+var impactTags = {
+    "Insufficient data/inconclusive": "unsure",
+    "More severe or more likely to occur": "human",
+    "Decrease, less severe or less likely to occur": "human",
+    "No discernible human influence": "natural"
+}
+
 map.addControl(new mapboxgl.NavigationControl());
 
 map.on('load', function() {
@@ -46,9 +68,15 @@ map.on('load', function() {
         let symbol = icons[type];
         console.log(symbol);
 
+        // create class names to use as tags for filtering
+        let typeTag = typeTags[type];
+        let year = feature.properties['year'];
+        let impact = feature.properties['impact'];
+        let impactTag = impactTags[impact];
+
         // create a HTML element for each feature
         var el = document.createElement('div');
-        el.className = 'marker';
+        el.className = 'marker ' + typeTag + " " + impactTag + " " + year;
         el.innerHTML = '<i class="' + symbol + '"></i>';
 
         // make a marker for each feature and add to the map

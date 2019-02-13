@@ -14,8 +14,8 @@ body {
 
 .marker {
     background-color: #2f8fce;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
@@ -23,5 +23,6 @@ body {
 
 .marker i {
     color: white;             
-    margin-top: 6px;
+    margin-top: 7px;
+    font-size: 15px;
 }

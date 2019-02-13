@@ -58,9 +58,7 @@ map.on('load', function() {
     geojson.features.forEach(function(feature) {
 
         let type = feature.properties['type'];
-        console.log(type);
         let symbol = icons[type];
-        console.log(symbol);
 
         // create class names to use as tags for filtering
         let typeTag = typeTags[type];
@@ -82,17 +80,42 @@ map.on('load', function() {
 
     let humanValue = "all";
     let impactValue = "all";
+    let yearValue = "all";
 
     function filterMarkers () {
 
-        if (humanValue == "all" || impactValue == "all") {
+        if (humanValue == "all" || impactValue == "all" || yearValue == "all") {
             // write code here
-            if (humanValue == "all" && impactValue !== "all") {
+            if (humanValue == "all" && impactValue !== "all" && yearValue == "all") {
+
                 $(".marker").css("visibility", "hidden");
                 $("." + impactValue).css("visibility", "visible");
-            } else if (impactValue == "all" && humanValue !== "all") {
+
+            } else if (humanValue !== "all" && impactValue == "all" && yearValue == "all") {
+
                 $(".marker").css("visibility", "hidden");
                 $("." + humanValue).css("visibility", "visible");
+
+            } else if (humanValue == "all" && impactValue !== "all" && yearValue !== "all") {
+
+                $(".marker").css("visibility", "hidden");
+                $("." + impactValue + "." + yearValue).css("visibility", "visible");
+
+            } else if (humanValue !== "all" && impactValue == "all" && yearValue !== "all") {
+
+                $(".marker").css("visibility", "hidden");
+                $("." + humanValue + "." + yearValue).css("visibility", "visible");
+
+            } else if (humanValue !== "all" && impactValue !== "all" && yearValue == "all") {
+
+                $(".marker").css("visibility", "hidden");
+                $("." + humanValue + "." + impactValue).css("visibility", "visible");
+
+            } else if (humanValue == "all" && impactValue == "all" && yearValue !== "all") {
+
+                $(".marker").css("visibility", "hidden");
+                $("." + yearValue).css("visibility", "visible");
+
             } else {
                 $(".marker").css("visibility", "visible");
             }
@@ -100,25 +123,27 @@ map.on('load', function() {
         } else {
             // hide all marks and then make those with the selected tags visible
             $(".marker").css("visibility", "hidden");
-            $("." + humanValue + "." + impactValue).css("visibility", "visible");
+            $("." + humanValue + "." + impactValue + "." + yearValue).css("visibility", "visible");
         }
 
     }
 
     document.getElementById('selectorHuman').addEventListener('change', function(e) {
-
         humanValue = e.target.value;
         console.log(humanValue);
         filterMarkers();
-
     });
     
     document.getElementById('selectorImpact').addEventListener('change', function(e) {
-
         impactValue = e.target.value;
         console.log(impactValue);
         filterMarkers();
+    });
 
+    document.getElementById('selectorYear').addEventListener('change', function(e) {
+        yearValue = e.target.value;
+        console.log(yearValue);
+        filterMarkers();
     });
 
 });

@@ -11,15 +11,24 @@ if (!mapboxgl.supported()) {
 
 map.addControl(new mapboxgl.NavigationControl());
 
-// add markers to map
-geojson.features.forEach(function(marker) {
+map.on('load', function() {
 
-    // create a HTML element for each feature
-    var el = document.createElement('div');
-    el.className = 'marker';
+    map.addSource("studies", {
+        "type": "geojson",
+        "data": geojson
+    });
 
-    // make a marker for each feature and add to the map
-    new mapboxgl.Marker(el)
-    .setLngLat(marker.geometry.coordinates)
-    .addTo(map);
+    geojson.features.forEach(function(feature) {
+
+        // create a HTML element for each feature
+        var el = document.createElement('div');
+        el.className = 'marker';
+
+        // make a marker for each feature and add to the map
+        new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .addTo(map);
+
+    });
+
 });

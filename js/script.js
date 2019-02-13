@@ -87,41 +87,30 @@ map.on('load', function() {
         if (humanValue == "all" || impactValue == "all" || yearValue == "all") {
             // write code here
             if (humanValue == "all" && impactValue !== "all" && yearValue == "all") {
-
                 $(".marker").css("visibility", "hidden");
                 $("." + impactValue).css("visibility", "visible");
-
             } else if (humanValue !== "all" && impactValue == "all" && yearValue == "all") {
-
                 $(".marker").css("visibility", "hidden");
                 $("." + humanValue).css("visibility", "visible");
-
             } else if (humanValue == "all" && impactValue !== "all" && yearValue !== "all") {
-
                 $(".marker").css("visibility", "hidden");
                 $("." + impactValue + "." + yearValue).css("visibility", "visible");
-
             } else if (humanValue !== "all" && impactValue == "all" && yearValue !== "all") {
-
                 $(".marker").css("visibility", "hidden");
                 $("." + humanValue + "." + yearValue).css("visibility", "visible");
-
             } else if (humanValue !== "all" && impactValue !== "all" && yearValue == "all") {
-
                 $(".marker").css("visibility", "hidden");
                 $("." + humanValue + "." + impactValue).css("visibility", "visible");
-
             } else if (humanValue == "all" && impactValue == "all" && yearValue !== "all") {
-
                 $(".marker").css("visibility", "hidden");
                 $("." + yearValue).css("visibility", "visible");
-
             } else {
+                // make all markers visible if all filters are set to 'all'
                 $(".marker").css("visibility", "visible");
             }
 
         } else {
-            // hide all marks and then make those with the selected tags visible
+            // hide all markers and then make those with the selected tags visible
             $(".marker").css("visibility", "hidden");
             $("." + humanValue + "." + impactValue + "." + yearValue).css("visibility", "visible");
         }

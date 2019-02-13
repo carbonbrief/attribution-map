@@ -13,9 +13,13 @@ body {
 }
 
 .marker {
-    background-color: blue;
-    width: 20px;
-    height: 20px;
+    background-color: #2f8fce;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+i {
+    color: white;
 }

@@ -70,8 +70,8 @@ map.on('load', function() {
         var el = document.createElement('div');
         el.className = 'marker ' + typeTag + " " + impactTag + " " + year;
 
-        if (typeTag == "drought") {
-            el.innerHTML = "<img class='marker-icon' src='img/drought.svg'></img>";
+        if (typeTag == "drought" || typeTag =="coral") {
+            el.innerHTML = "<img class='marker-icon' src='img/" + typeTag + ".svg'></img>";
         } else {
             el.innerHTML = '<i class="' + symbol + '"></i>';
         }

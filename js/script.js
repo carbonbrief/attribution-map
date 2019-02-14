@@ -106,9 +106,23 @@ map.on('load', function() {
             $(this).css("opacity", 1);
         }
 
-        // FILTER MAP
+        filterMap()
+
+    });
+
+    let yearValue = "all";
+
+    document.getElementById('selectorYear').addEventListener('change', function(e) {
+        yearValue = e.target.value;
+        console.log(yearValue);
+        filterMap();
+    });
+
+    function filterMap () {
+
+        // GATHER DATA ON CHECKBOXES
         let checkboxes = ["human", "natural", "unsure", "cloud", "cold", "coral", "drought", "eco", "nino", "heat", "ocean", "flood", "storm", "sun", "fire"];
-        
+
         let selected = [];
         $('input:checked').each(function() {
             selected.push($(this).attr('name'));
@@ -119,71 +133,82 @@ map.on('load', function() {
 
         // make all map markers visible
         $(".marker").css("visibility", "visible");
+
+        let years = ["2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011"];
         
         // hide each of the unselected classes in turn
-        for (i = 0; i < unselected.length; i++) {
-            $("." + unselected[i]).css("visibility", "hidden");
+
+        if (yearValue == "all") {
+            for (i = 0; i < unselected.length; i++) {
+                $("." + unselected[i]).css("visibility", "hidden");
+            }
+        } else {
+            // filter both
+            for (i = 0; i < years.length; i++) {
+                if (yearValue !== years[i]) {
+                    $("." + years[i]).css("visibility", "hidden");
+                }
+            }
+
+            for (i = 0; i < unselected.length; i++) {
+                $("." + unselected[i]).css("visibility", "hidden");
+            }
+
         }
 
         console.log(selected);
         console.log(unselected);
-    });
-
-    let humanValue = "all";
-    let impactValue = "all";
-    let yearValue = "all";
-
-    function filterMarkers () {
-
-        if (humanValue == "all" || impactValue == "all" || yearValue == "all") {
-            // write code here
-            if (humanValue == "all" && impactValue !== "all" && yearValue == "all") {
-                $(".marker").css("visibility", "hidden");
-                $("." + impactValue).css("visibility", "visible");
-            } else if (humanValue !== "all" && impactValue == "all" && yearValue == "all") {
-                $(".marker").css("visibility", "hidden");
-                $("." + humanValue).css("visibility", "visible");
-            } else if (humanValue == "all" && impactValue !== "all" && yearValue !== "all") {
-                $(".marker").css("visibility", "hidden");
-                $("." + impactValue + "." + yearValue).css("visibility", "visible");
-            } else if (humanValue !== "all" && impactValue == "all" && yearValue !== "all") {
-                $(".marker").css("visibility", "hidden");
-                $("." + humanValue + "." + yearValue).css("visibility", "visible");
-            } else if (humanValue !== "all" && impactValue !== "all" && yearValue == "all") {
-                $(".marker").css("visibility", "hidden");
-                $("." + humanValue + "." + impactValue).css("visibility", "visible");
-            } else if (humanValue == "all" && impactValue == "all" && yearValue !== "all") {
-                $(".marker").css("visibility", "hidden");
-                $("." + yearValue).css("visibility", "visible");
-            } else {
-                // make all markers visible if all filters are set to 'all'
-                $(".marker").css("visibility", "visible");
-            }
-
-        } else {
-            // hide all markers and then make those with the selected tags visible
-            $(".marker").css("visibility", "hidden");
-            $("." + humanValue + "." + impactValue + "." + yearValue).css("visibility", "visible");
-        }
 
     }
 
-    document.getElementById('selectorHuman').addEventListener('change', function(e) {
-        humanValue = e.target.value;
-        console.log(humanValue);
-        filterMarkers();
-    });
-    
-    document.getElementById('selectorImpact').addEventListener('change', function(e) {
-        impactValue = e.target.value;
-        console.log(impactValue);
-        filterMarkers();
-    });
+    // let humanValue = "all";
+    // let impactValue = "all";
 
-    document.getElementById('selectorYear').addEventListener('change', function(e) {
-        yearValue = e.target.value;
-        console.log(yearValue);
-        filterMarkers();
-    });
+    // function filterMarkers () {
+
+    //     if (humanValue == "all" || impactValue == "all" || yearValue == "all") {
+    //         // write code here
+    //         if (humanValue == "all" && impactValue !== "all" && yearValue == "all") {
+    //             $(".marker").css("visibility", "hidden");
+    //             $("." + impactValue).css("visibility", "visible");
+    //         } else if (humanValue !== "all" && impactValue == "all" && yearValue == "all") {
+    //             $(".marker").css("visibility", "hidden");
+    //             $("." + humanValue).css("visibility", "visible");
+    //         } else if (humanValue == "all" && impactValue !== "all" && yearValue !== "all") {
+    //             $(".marker").css("visibility", "hidden");
+    //             $("." + impactValue + "." + yearValue).css("visibility", "visible");
+    //         } else if (humanValue !== "all" && impactValue == "all" && yearValue !== "all") {
+    //             $(".marker").css("visibility", "hidden");
+    //             $("." + humanValue + "." + yearValue).css("visibility", "visible");
+    //         } else if (humanValue !== "all" && impactValue !== "all" && yearValue == "all") {
+    //             $(".marker").css("visibility", "hidden");
+    //             $("." + humanValue + "." + impactValue).css("visibility", "visible");
+    //         } else if (humanValue == "all" && impactValue == "all" && yearValue !== "all") {
+    //             $(".marker").css("visibility", "hidden");
+    //             $("." + yearValue).css("visibility", "visible");
+    //         } else {
+    //             // make all markers visible if all filters are set to 'all'
+    //             $(".marker").css("visibility", "visible");
+    //         }
+
+    //     } else {
+    //         // hide all markers and then make those with the selected tags visible
+    //         $(".marker").css("visibility", "hidden");
+    //         $("." + humanValue + "." + impactValue + "." + yearValue).css("visibility", "visible");
+    //     }
+
+    // }
+
+    // document.getElementById('selectorHuman').addEventListener('change', function(e) {
+    //     humanValue = e.target.value;
+    //     console.log(humanValue);
+    //     filterMarkers();
+    // });
+    
+    // document.getElementById('selectorImpact').addEventListener('change', function(e) {
+    //     impactValue = e.target.value;
+    //     console.log(impactValue);
+    //     filterMarkers();
+    // });
 
 });

@@ -53,11 +53,11 @@ a:hover {
 
 .mapboxgl-popup {
     max-width: 300px;
-    margin: 10px;
 }
 
 .mapboxgl-popup h3 {
     margin-top: 0;
+    margin-bottom: 0.6em;
 }
 
 .mapboxgl-popup p {
@@ -67,11 +67,14 @@ a:hover {
 
 .mapboxgl-popup-content {
     font-family: 'PT Sans', sans-serif;
+    padding: 15px;
 }
 
 .summary {
     font-family: "PT Serif", serif;
     font-size: 13.5px;
+    margin-top: 0.6em !important;
+    margin-bottom: 0.6em !important;
 }
 
 .mapboxgl-popup i {

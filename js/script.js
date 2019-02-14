@@ -85,6 +85,37 @@ map.on('load', function() {
 
     });
 
+    // try filter checkbox method instead
+
+    // first change checkbox when list item is clicked
+    $(".list-group-item").click(function(e) {
+
+        // CHANGE CLICK CHECKBOX
+        let $tc = $(this).find('input:checkbox');
+        // checks what the current status of the checkbox is
+        let tv = $tc.attr('checked');
+        console.log(tv);
+        // applies the opposite
+        $tc.attr('checked', !tv);
+
+        // UPDATE STYLE
+        // tv is the previous value
+        if (tv == "checked") {
+            $(this).css("opacity", 0.4);
+        } else {
+            $(this).css("opacity", 1);
+        }
+
+        // FILTER MAP
+
+        var selected = [];
+        $('input:checked').each(function() {
+            selected.push($(this).attr('name'));
+        });
+
+        console.log(selected);
+    });
+
     let humanValue = "all";
     let impactValue = "all";
     let yearValue = "all";

@@ -101,13 +101,13 @@ map.on('load', function() {
         // UPDATE STYLE
         // tv is the previous value
         if (tv == "checked") {
-            $(this).css("opacity", 0.4);
+            $(this).css("opacity", 0.3);
         } else {
             $(this).css("opacity", 1);
         }
 
         // FILTER MAP
-        let checkboxes = ["human", "natural", "unsure"];
+        let checkboxes = ["human", "natural", "unsure", "cloud", "cold", "coral", "drought", "eco", "nino", "heat", "ocean", "flood", "storm", "sun", "fire"];
         
         let selected = [];
         $('input:checked').each(function() {

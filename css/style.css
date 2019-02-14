@@ -143,8 +143,8 @@ li {
     cursor: pointer;
 }
 
-li:hover {
-    opacity: 0.4;
+.list-group-item:hover {
+    opacity: 0.6;
 }
 
 .impact i {

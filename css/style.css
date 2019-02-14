@@ -99,7 +99,7 @@ a:hover {
     margin: 10px;
     padding: 10px 20px;
     padding-right: 35px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.92);
     border-radius: 5px;
     z-index: 5;
 }
@@ -175,7 +175,7 @@ li {
     float: left;
     margin-right: 1em;
     margin-bottom: 0.5em;
-    background-color: #ececec;
+    background-color: #e7e7e7;
     border-radius: 8px;
     padding: 2px;
     padding-left: 4px;
@@ -184,6 +184,14 @@ li {
 }
 
 .list-group-item:hover {
+    opacity: 0.6;
+}
+
+.selected {
+    opacity: 0.4;
+}
+
+.selected:hover {
     opacity: 0.6;
 }
 

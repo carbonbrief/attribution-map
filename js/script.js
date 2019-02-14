@@ -103,9 +103,6 @@ map.on('load', function() {
 
     });
 
-    // try filter checkbox method instead
-
-    // first change checkbox when list item is clicked
     $(".list-group-item").click(function(e) {
 
         // CHANGE CLICK CHECKBOX
@@ -119,9 +116,9 @@ map.on('load', function() {
         // UPDATE STYLE
         // tv is the previous value
         if (tv == "checked") {
-            $(this).css("opacity", 0.3);
+            $(this).addClass("selected");
         } else {
-            $(this).css("opacity", 1);
+            $(this).removeClass("selected");
         }
 
         filterMap()

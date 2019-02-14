@@ -156,59 +156,6 @@ map.on('load', function() {
 
         }
 
-        console.log(selected);
-        console.log(unselected);
-
     }
-
-    // let humanValue = "all";
-    // let impactValue = "all";
-
-    // function filterMarkers () {
-
-    //     if (humanValue == "all" || impactValue == "all" || yearValue == "all") {
-    //         // write code here
-    //         if (humanValue == "all" && impactValue !== "all" && yearValue == "all") {
-    //             $(".marker").css("visibility", "hidden");
-    //             $("." + impactValue).css("visibility", "visible");
-    //         } else if (humanValue !== "all" && impactValue == "all" && yearValue == "all") {
-    //             $(".marker").css("visibility", "hidden");
-    //             $("." + humanValue).css("visibility", "visible");
-    //         } else if (humanValue == "all" && impactValue !== "all" && yearValue !== "all") {
-    //             $(".marker").css("visibility", "hidden");
-    //             $("." + impactValue + "." + yearValue).css("visibility", "visible");
-    //         } else if (humanValue !== "all" && impactValue == "all" && yearValue !== "all") {
-    //             $(".marker").css("visibility", "hidden");
-    //             $("." + humanValue + "." + yearValue).css("visibility", "visible");
-    //         } else if (humanValue !== "all" && impactValue !== "all" && yearValue == "all") {
-    //             $(".marker").css("visibility", "hidden");
-    //             $("." + humanValue + "." + impactValue).css("visibility", "visible");
-    //         } else if (humanValue == "all" && impactValue == "all" && yearValue !== "all") {
-    //             $(".marker").css("visibility", "hidden");
-    //             $("." + yearValue).css("visibility", "visible");
-    //         } else {
-    //             // make all markers visible if all filters are set to 'all'
-    //             $(".marker").css("visibility", "visible");
-    //         }
-
-    //     } else {
-    //         // hide all markers and then make those with the selected tags visible
-    //         $(".marker").css("visibility", "hidden");
-    //         $("." + humanValue + "." + impactValue + "." + yearValue).css("visibility", "visible");
-    //     }
-
-    // }
-
-    // document.getElementById('selectorHuman').addEventListener('change', function(e) {
-    //     humanValue = e.target.value;
-    //     console.log(humanValue);
-    //     filterMarkers();
-    // });
-    
-    // document.getElementById('selectorImpact').addEventListener('change', function(e) {
-    //     impactValue = e.target.value;
-    //     console.log(impactValue);
-    //     filterMarkers();
-    // });
 
 });

@@ -46,6 +46,21 @@ var impactTags = {
     "No discernible human influence": "natural"
 }
 
+var popupIcon = {
+    "Heat": "<i class='fas fa-thermometer-full'></i>",
+    "Sunshine": "<i class='fas fa-sun'></i>",
+    "Drought": "<img class='popup-icon' src='img/drought-dark.svg'></img>",
+    "Rain & flooding": "<i class='fas fa-tint'></i>",
+    "Cold, snow & ice": "<i class='far fa-snowflake'></i>",
+    "Oceans": "<i class='fas fa-ship'></i>",
+    "Storm": "<i class='fas fa-bolt'></i>",
+    "Wildfire": "<i class='fas fa-fire-alt'></i>",
+    "Atmosphere": "<i class='fas fa-cloud'></i>",
+    "Ecosystem function": "<i class='fas fa-seedling'></i>",
+    "Coral bleaching": "<img class='popup-icon' src='img/coral-dark.svg'></img>",
+    "El Nino": "<i class='fas fa-globe-asia'></i>"
+}
+
 map.addControl(new mapboxgl.NavigationControl());
 
 map.on('load', function() {
@@ -79,8 +94,11 @@ map.on('load', function() {
         // make a marker for each feature and add to the map
         new mapboxgl.Marker(el)
         .setLngLat(feature.geometry.coordinates)
-        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-        .setHTML('<h3>' + type + '</h3><p>' + feature.properties['summary'] + '</p>'))
+        .setPopup(new mapboxgl.Popup({ offset: 25, closeButton: false }) // add popups
+        .setHTML('<h3>' + feature.properties['location'] + '</h3><p>'
+        + popupIcon[type] + " "  + type + '</p><p class="summary">' 
+        + feature.properties['summary'] + '</p><p><a href="'
+        + feature.properties['url'] + '" target="_blank">' + feature.properties['citation1'] + "</a> " + feature.properties['citation2'] + '</p>'))
         .addTo(map);
 
     });

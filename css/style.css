@@ -188,7 +188,7 @@ li {
 }
 
 .selected {
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 .selected:hover {
@@ -197,4 +197,23 @@ li {
 
 .impact i {
     margin-right: 3px;
+}
+
+/* style the dropdown */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://s3-eu-west-1.amazonaws.com/cbbranding/new+folder/arrow-for-map.png) 96% / 15% no-repeat #e7e7e7;
+    background-size: 20px 13px;
+    border:2px;
+    padding: 4px;
+    color: #333333;
+    outline:0px;
+}
+
+.selector {
+    width: 100px;
+    border-radius: 4px;
 }

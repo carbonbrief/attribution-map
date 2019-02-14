@@ -61,6 +61,12 @@ var popupIcon = {
     "El Nino": "<i class='fas fa-globe-asia'></i>"
 }
 
+var colors = {
+    "human": "#dd8a3e",
+    "natural": "#2f8fce",
+    "unsure": "#999999"
+}
+
 map.addControl(new mapboxgl.NavigationControl());
 
 map.on('load', function() {
@@ -94,9 +100,10 @@ map.on('load', function() {
         // make a marker for each feature and add to the map
         new mapboxgl.Marker(el)
         .setLngLat(feature.geometry.coordinates)
-        .setPopup(new mapboxgl.Popup({ offset: 25, closeButton: false }) // add popups
-        .setHTML('<h3>' + feature.properties['location'] + '</h3><p>'
-        + popupIcon[type] + " "  + type + '</p><p class="summary">' 
+        .setPopup(new mapboxgl.Popup({ offset: 10, closeButton: false }) // add popups
+        .setHTML('<h3 style="padding-bottom: 4px; border-bottom: 2px solid ' + colors[impactTag] + ';">' + feature.properties['location'] + '</h3><p>'
+        + popupIcon[type] + " "  + type + '</p><p>' 
+        + '<div class="colour-key" style="background-color: ' + colors[impactTag]+ '; margin-right: 5px;"></div>' + impact + '</p><p class="summary">' 
         + feature.properties['summary'] + '</p><p><a href="'
         + feature.properties['url'] + '" target="_blank">' + feature.properties['citation1'] + "</a> " + feature.properties['citation2'] + '</p>'))
         .addTo(map);

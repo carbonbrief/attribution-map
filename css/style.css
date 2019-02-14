@@ -2,8 +2,49 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', Helvetica, Arial, Sans-serif;
+    color: #333333;
 }
-  
+
+h1 {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: #333333;
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.subtitle {
+    font-family: "PT Serif", serif;
+    font-style: italic;
+}
+
+h2 {
+    font-family: "PT", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #333333;
+}
+
+h3 {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.1;
+    color: #333333;
+}
+
+.mapboxgl-popup {
+    max-width: 240px;
+}
+
+.mapboxgl-popup-content {
+    font-family: 'PT Sans', sans-serif;
+}
+
 #map {
     position: absolute;
     top: 0;
@@ -14,7 +55,7 @@ body {
 
 #console {
     position: absolute;
-    width: 400px;
+    width: 380px;
     margin: 10px;
     padding: 10px 20px;
     padding-right: 35px;
@@ -25,6 +66,7 @@ body {
 
 .session {
     margin-bottom: 15px;
+    display: inline-block;
 }
 
 .marker {
@@ -40,23 +82,66 @@ body {
     width: 17px;
     height: 17px;
     vertical-align: text-top;
-    margin-top: 3px;
+    margin-top: 3.5px;
+}
+
+.key-icon {
+    margin-top: 1px;
+    width: 12px;
+    height: 12px;
+    vertical-align: text-top;
 }
 
 .human {
-    background-color: #dd8a3e;
+    background-color: rgba(221, 139, 62, 0.92);
 }
 
 .natural {
-    background-color: #2f8fce;
+    background-color: rgba(47, 142, 206, 0.92);
 }
 
 .unsure {
-    background-color: #999999;
+    background-color: rgba(153, 153, 153, 0.92);
 }
 
 .marker i {
     color: white;             
     margin-top: 7px;
     font-size: 15px;
+}
+
+/* style the key  */
+
+.colour-key {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#list-group {
+    padding: 0px;
+}
+
+li {
+    font-size: 12.5px;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.impact i {
+    margin-right: 3px;
 }

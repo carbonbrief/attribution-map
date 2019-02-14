@@ -3,7 +3,7 @@ if (!mapboxgl.supported()) {
 } else {
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
+        style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
         center: [8, 20],
         zoom: 1.5
     });
@@ -79,6 +79,8 @@ map.on('load', function() {
         // make a marker for each feature and add to the map
         new mapboxgl.Marker(el)
         .setLngLat(feature.geometry.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+        .setHTML('<h3>' + type + '</h3><p>' + feature.properties['summary'] + '</p>'))
         .addTo(map);
 
     });

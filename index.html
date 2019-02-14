@@ -17,38 +17,113 @@
     <body>
         <div id="console">
             <div class="session">
-                <select id='selectorHuman' class="selector">
-                    <option value='all' selected='selected'>All</option>
-                    <option value='human' >Human influence found</option>
-                    <option value='natural' >No human influence found</option>
-                    <option value='unsure' >Inconclusive</option>
-                </select>
-                <select id='selectorImpact' class="selector">
-                    <option value='all' selected='selected'>All</option>
-                    <option value='heat' >Heat</option>
-                    <option value='sun' >Sunshine</option>
-                    <option value='drought' >Drought</option>
-                    <option value='flood' >Rain & flooding</option>
-                    <option value='cold' >Cold, snow & ice</option>
-                    <option value='ocean' >Oceans</option>
-                    <option value='storm' >Storm</option>
-                    <option value='fire' >Wildfire</option>
-                    <option value='cloud' >Atmosphere</option>
-                    <option value='eco' >Ecosystem function</option>
-                    <option value='coral' >Coral bleaching</option>
-                    <option value='nino' >El Niño</option>
-                </select>
-                <select id='selectorYear' class="selector">
-                    <option value='all' selected='selected'>All</option>
-                    <option value='2018' >2018</option>
-                    <option value='2017' >2017</option>
-                    <option value='2016' >2016</option>
-                    <option value='2015' >2015</option>
-                    <option value='2014' >2014</option>
-                    <option value='2013' >2013</option>
-                    <option value='2012' >2012</option>
-                    <option value='2011' >2011</option>
-                </select>
+                <h1>Attributing extreme weather to climate change</h1>
+                <p class="subtitle">Click on a study to see the evidence…</p>
+                <div class="session key">
+                    <h2>Finding</h2>
+                    <ul id="list-group">
+                        <li class="list-group-item">
+                            <div class="colour-key" style="background-color: #dd8a3e;"></div>
+                            Human influence found
+                        </li>
+                        <li class="list-group-item">
+                            <div class="colour-key" style="background-color: #2f8fce;"></div>
+                            No human influence found
+                        </li>
+                        <li class="list-group-item">
+                            <div class="colour-key" style="background-color: #999999;"></div>
+                            Inconclusive
+                        </li>
+                    </ul>
+                </div>
+                <div class="session impact">
+                    <h2>Impact</h2>
+                    <ul id="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-cloud"></i>
+                            Atmosphere
+                        </li>
+                        <li class="list-group-item">
+                            <i class="far fa-snowflake"></i>
+                            Cold, snow & ice
+                        </li>
+                        <li class="list-group-item">
+                            <img class="key-icon" src="img/coral-dark.svg">
+                            Coral bleaching
+                        </li>
+                        <li class="list-group-item">
+                            <img class="key-icon" src="img/drought-dark.svg">
+                            Drought
+                        </li> 
+                        <li class="list-group-item">
+                            <i class="fas fa-seedling"></i>
+                            Ecosystem function
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-globe-asia"></i>
+                            El Niño
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-thermometer-full"></i>
+                            Heat
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-ship"></i>
+                            Oceans
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-tint"></i>
+                            Rain & flooding
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-bolt"></i>
+                            Storm
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-sun"></i>
+                            Sunshine
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-fire-alt"></i>
+                            Wildfire
+                        </li>
+                    </ul>
+                </div>
+                <div class="session">
+                    <h2>Filters</h2>
+                    <select id='selectorHuman' class="selector">
+                        <option value='all' selected='selected'>All</option>
+                        <option value='human' >Human influence found</option>
+                        <option value='natural' >No human influence found</option>
+                        <option value='unsure' >Inconclusive</option>
+                    </select>
+                    <select id='selectorImpact' class="selector">
+                        <option value='all' selected='selected'>All</option>
+                        <option value='heat' >Heat</option>
+                        <option value='sun' >Sunshine</option>
+                        <option value='drought' >Drought</option>
+                        <option value='flood' >Rain & flooding</option>
+                        <option value='cold' >Cold, snow & ice</option>
+                        <option value='ocean' >Oceans</option>
+                        <option value='storm' >Storm</option>
+                        <option value='fire' >Wildfire</option>
+                        <option value='cloud' >Atmosphere</option>
+                        <option value='eco' >Ecosystem function</option>
+                        <option value='coral' >Coral bleaching</option>
+                        <option value='nino' >El Niño</option>
+                    </select>
+                    <select id='selectorYear' class="selector">
+                        <option value='all' selected='selected'>All</option>
+                        <option value='2018' >2018</option>
+                        <option value='2017' >2017</option>
+                        <option value='2016' >2016</option>
+                        <option value='2015' >2015</option>
+                        <option value='2014' >2014</option>
+                        <option value='2013' >2013</option>
+                        <option value='2012' >2012</option>
+                        <option value='2011' >2011</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div id="map"></div>

@@ -107,13 +107,26 @@ map.on('load', function() {
         }
 
         // FILTER MAP
-
-        var selected = [];
+        let checkboxes = ["human", "natural", "unsure"];
+        
+        let selected = [];
         $('input:checked').each(function() {
             selected.push($(this).attr('name'));
         });
 
+        // create array of checkboxes that aren't selected
+        let unselected = checkboxes.filter(i => selected.indexOf(i) === -1);
+
+        // make all map markers visible
+        $(".marker").css("visibility", "visible");
+        
+        // hide each of the unselected classes in turn
+        for (i = 0; i < unselected.length; i++) {
+            $("." + unselected[i]).css("visibility", "hidden");
+        }
+
         console.log(selected);
+        console.log(unselected);
     });
 
     let humanValue = "all";

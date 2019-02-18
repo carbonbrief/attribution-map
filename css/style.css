@@ -48,7 +48,7 @@ p {
 }
 
 a {
-    color: #53abdb;
+    color: #2f8fce;
     text-decoration: none;
 }
 
@@ -134,6 +134,10 @@ a:hover {
 .row {
     display: flex;
     width: 100%;
+}
+
+#studies {
+    font-weight: 700;
 }
 
 .marker {

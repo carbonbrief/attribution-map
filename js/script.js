@@ -142,7 +142,6 @@ map.on('load', function() {
 
     document.getElementById('selectorYear').addEventListener('change', function(e) {
         yearValue = e.target.value;
-        console.log(yearValue);
         filterMap();
     });
 
@@ -183,6 +182,18 @@ map.on('load', function() {
             }
 
         }
+
+        // UPDATE STUDIES
+
+        let markers = [];
+
+        $(".marker").each(function() {
+            if (window.getComputedStyle(this).visibility === "visible") {
+                markers.push($(this));
+            }
+        });
+
+        $("#studies").text(markers.length);
 
     }
 

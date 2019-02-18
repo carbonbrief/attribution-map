@@ -17,7 +17,7 @@ h1 {
 }
 
 .highlight {
-    border-bottom: 4px solid #dd8a3e;
+    border-bottom: 4px solid #f47676;
 }
 
 .subtitle {
@@ -48,7 +48,7 @@ p {
 }
 
 a {
-    color: #2f8fce;
+    color: #53abdb;
     text-decoration: none;
 }
 
@@ -122,6 +122,20 @@ a:hover {
     display: inline-block;
 }
 
+.last {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.column {
+    flex: 50%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
 .marker {
     width: 30px;
     height: 30px;
@@ -146,15 +160,15 @@ a:hover {
 }
 
 .human {
-    background-color: rgba(221, 139, 62, 0.92);
+    background-color: rgba(244, 118, 118, 0.9);
 }
 
 .natural {
-    background-color: rgba(47, 142, 206, 0.92);
+    background-color: rgba(98, 184, 221, 0.9);
 }
 
 .unsure {
-    background-color: rgba(153, 153, 153, 0.92);
+    background-color: rgba(153, 153, 153, 0.9);
 }
 
 .marker i {
@@ -221,6 +235,7 @@ li {
 .list-tooltip li {
     background-color: white;
     margin-bottom: 0em;
+    cursor: pointer;
 }
 
 /* style the dropdown */

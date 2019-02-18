@@ -62,8 +62,8 @@ var popupIcon = {
 }
 
 var colors = {
-    "human": "#dd8a3e",
-    "natural": "#2f8fce",
+    "human": "#f47676",
+    "natural": "#62b8dd",
     "unsure": "#999999"
 }
 

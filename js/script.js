@@ -107,10 +107,10 @@ map.on('load', function() {
         new mapboxgl.Marker(el)
         .setLngLat(feature.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({ offset: 10, closeButton: false }) // add popups
-        .setHTML('<h3 style="padding-bottom: 4px; border-bottom: 2px solid ' + colors[impactTag] + ';">' + feature.properties['location'] + '</h3><p>'
-        + popupIcon[type] + " "  + type + '</p><p>' 
-        + '<div class="colour-key" style="background-color: ' + colors[impactTag]+ '; margin-right: 5px;"></div>' + impact + '</p><p class="summary">' 
-        + summary + '</p><p><a href="'
+        .setHTML('<h3 style="padding-bottom: 4px; border-bottom: 2px solid ' + colors[impactTag] + ';">' + feature.properties['location'] + '</h3><ul class="list-group list-tooltip"><li>'
+        + popupIcon[type] + " "  + type + '</li>' 
+        + '<li><div class="colour-key" style="background-color: ' + colors[impactTag]+ '; margin-right: 5px;"></div>' + impact + '</li></ul><p class="summary">' 
+        + summary + '</p><p class="citation"><a href="'
         + feature.properties['url'] + '" target="_blank">' + feature.properties['citation1'] + "</a> " + feature.properties['citation2'] + '</p>'))
         .addTo(map);
 

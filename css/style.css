@@ -23,6 +23,7 @@ h1 {
 .subtitle {
     font-family: "PT Serif", serif;
     font-style: italic;
+    font-size: 13.5px;
 }
 
 h2 {
@@ -40,6 +41,10 @@ h3 {
     font-size: 22px;
     line-height: 1.1;
     color: #333333;
+}
+
+p {
+    font-size: 13px;
 }
 
 a {
@@ -73,8 +78,13 @@ a:hover {
 .summary {
     font-family: "PT Serif", serif;
     font-size: 13.5px;
-    margin-top: 0.6em !important;
-    margin-bottom: 0.6em !important;
+    margin-top: 0.1em !important;
+    margin-bottom: 0.7em !important;
+}
+
+.citation {
+    font-size: 12px;
+    line-height: normal;
 }
 
 .mapboxgl-popup i {
@@ -163,13 +173,14 @@ a:hover {
     border-radius: 25px;
     display: inline-block;
     margin-right: 3px;
+    vertical-align: -10%;
 }
 
 ul {
     list-style-type: none;
 }
 
-#list-group {
+.list-group {
     padding: 0px;
 }
 
@@ -200,6 +211,16 @@ li {
 
 .impact i {
     margin-right: 3px;
+}
+
+.list-tooltip {
+    display: inline-block;
+    margin: 0;
+}
+
+.list-tooltip li {
+    background-color: white;
+    margin-bottom: 0em;
 }
 
 /* style the dropdown */

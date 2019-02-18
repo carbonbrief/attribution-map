@@ -87,6 +87,12 @@ map.on('load', function() {
         let impact = feature.properties['impact'];
         let impactTag = impactTags[impact];
 
+        // replave hash marks with smart quotes
+        let summary = feature.properties['summary'];
+        summary = summary.substr(1, summary.length-2);
+        summary = "\u201c" + summary + "\u201d";
+
+
         // create a HTML element for each feature
         var el = document.createElement('div');
         el.className = 'marker ' + typeTag + " " + impactTag + " " + year;
@@ -104,7 +110,7 @@ map.on('load', function() {
         .setHTML('<h3 style="padding-bottom: 4px; border-bottom: 2px solid ' + colors[impactTag] + ';">' + feature.properties['location'] + '</h3><p>'
         + popupIcon[type] + " "  + type + '</p><p>' 
         + '<div class="colour-key" style="background-color: ' + colors[impactTag]+ '; margin-right: 5px;"></div>' + impact + '</p><p class="summary">' 
-        + feature.properties['summary'] + '</p><p><a href="'
+        + summary + '</p><p><a href="'
         + feature.properties['url'] + '" target="_blank">' + feature.properties['citation1'] + "</a> " + feature.properties['citation2'] + '</p>'))
         .addTo(map);
 

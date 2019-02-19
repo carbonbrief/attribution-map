@@ -202,14 +202,17 @@ ul {
     padding: 0px;
 }
 
-.select-controls {
+.impacts {
     display: inline-block;
-    margin-top: 10px;
 }
 
-.select-controls button {
+.controls {
+    margin-top: 0.5em;
+}
+
+.controls button {
     float: left;
-    margin-right: 5px;
+    margin-right: 0.7em;
 }
 
 button {
@@ -248,7 +251,7 @@ button:focus {
 li {
     font-size: 12.5px;
     float: left;
-    margin-right: 1em;
+    margin-right: 0.7em;
     margin-bottom: 0.5em;
     background-color: #e7e7e7;
     border-radius: 8px;
@@ -298,7 +301,7 @@ select {
 }
 
 .selector {
-    width: 100px;
+    width: 120px;
     border-radius: 4px;
 }
 

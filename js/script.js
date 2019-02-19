@@ -122,7 +122,6 @@ map.on('load', function() {
         let $tc = $(this).find('input:checkbox');
         // checks what the current status of the checkbox is
         let tv = $tc.attr('checked');
-        console.log(tv);
         // applies the opposite
         $tc.attr('checked', !tv);
 

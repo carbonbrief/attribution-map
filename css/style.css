@@ -31,7 +31,7 @@ h2 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
-    color: #5e5e5e;
+    color: #333333;
 }
 
 h3 {
@@ -202,6 +202,49 @@ ul {
     padding: 0px;
 }
 
+.select-controls {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.select-controls button {
+    float: left;
+    margin-right: 5px;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 8px;
+    margin: 0;
+    text-decoration: none;
+    background: #7e7e7e;
+    color: #ffffff;
+    font-family: PT Sans;
+    font-size: 12.5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #333333;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
 li {
     font-size: 12.5px;
     float: left;
@@ -209,9 +252,7 @@ li {
     margin-bottom: 0.5em;
     background-color: #e7e7e7;
     border-radius: 8px;
-    padding: 2px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 2px 5px;
     cursor: pointer;
 }
 

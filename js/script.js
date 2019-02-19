@@ -133,7 +133,7 @@ map.on('load', function() {
             $(this).removeClass("unselected");
         }
 
-        filterMap()
+        filterMap();
 
     });
 
@@ -143,12 +143,10 @@ map.on('load', function() {
 
             if(this.checked) {
                 // do nothing
-                console.log("checked " + $(this).attr('name'));
             } else {
                 $(this).attr('checked', 'checked');
                 // unselected = greyed out
                 $(this).parent('li').removeClass('unselected');
-                console.log("unchecked " + $(this).attr('name'));
             }
 
         });

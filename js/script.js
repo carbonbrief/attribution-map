@@ -140,7 +140,6 @@ map.on('load', function() {
     $("#select").click(function(e) {
 
         $(".impact input:checkbox").each(function() {
-
             if(this.checked) {
                 // do nothing
             } else {
@@ -148,7 +147,22 @@ map.on('load', function() {
                 // unselected = greyed out
                 $(this).parent('li').removeClass('unselected');
             }
+        });
 
+        filterMap();
+
+    });
+
+    $("#deselect").click(function(e) {
+
+        $(".impact input:checkbox").each(function() {
+            if(this.checked) {
+                $(this).attr('checked', false);
+                // unselected = greyed out
+                $(this).parent('li').addClass('unselected');
+            } else {
+                // do nothing
+            }
         });
 
         filterMap();

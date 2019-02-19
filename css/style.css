@@ -260,11 +260,11 @@ li {
     opacity: 0.6;
 }
 
-.selected {
+.unselected {
     opacity: 0.3;
 }
 
-.selected:hover {
+.unselected:hover {
     opacity: 0.6;
 }
 

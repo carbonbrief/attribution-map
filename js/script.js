@@ -128,12 +128,32 @@ map.on('load', function() {
         // UPDATE STYLE
         // tv is the previous value
         if (tv == "checked") {
-            $(this).addClass("selected");
+            $(this).addClass("unselected");
         } else {
-            $(this).removeClass("selected");
+            $(this).removeClass("unselected");
         }
 
         filterMap()
+
+    });
+
+    $("#select").click(function(e) {
+
+        $(".impact input:checkbox").each(function() {
+
+            if(this.checked) {
+                // do nothing
+                console.log("checked " + $(this).attr('name'));
+            } else {
+                $(this).attr('checked', 'checked');
+                // unselected = greyed out
+                $(this).parent('li').removeClass('unselected');
+                console.log("unchecked " + $(this).attr('name'));
+            }
+
+        });
+
+        filterMap();
 
     });
 

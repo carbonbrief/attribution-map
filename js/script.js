@@ -237,3 +237,11 @@ $(document).ready(function () {
         $(this).val($(this).find('option[selected]').val());
     });
 })
+
+// TOGGLE BUTTON
+
+$(".toggle").click(function() {
+    $("#console").toggleClass('console-close console-open');
+    $('.arrow-right-hidden').toggleClass('arrow-right');
+    $('.arrow-left').toggleClass('arrow-left-hidden');
+});

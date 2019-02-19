@@ -241,9 +241,9 @@ button:focus {
     outline-offset: -4px;
 }
 
-button:active {
+/* button:active {
     transform: scale(0.99);
-}
+} */
 
 li {
     font-size: 12.5px;
@@ -300,4 +300,66 @@ select {
 .selector {
     width: 100px;
     border-radius: 4px;
+}
+
+/* arrow toggle */
+
+#console-toggle {
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    position: absolute;
+    z-index: 99999999;
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+
+.toggle {
+    color: #7e7e7e;
+    text-decoration: none;
+    text-align: right;
+}
+
+.toggle:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.arrow-right-hidden {
+    display: none;
+}
+
+.arrow-left {
+    display: inline;
+}
+
+.arrow-left-hidden {
+    display: none;
+}
+
+.arrow-right {
+    display: inline;
+}
+
+.console-close {
+    transform: translateX(calc(-100% + 25px));
+    -ms-transform: translateX(calc(-100% + 25px));
+    -webkit-transform: translateX(calc(-100% + 25px));
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-property: transform;
+    -webkit-transition-property: transform;
+    -moz-transition-property: transform;
+}
+
+.console-open {
+    transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    transition-property: transform;
+    -webkit-transition-property: transform;
+    -moz-transition-property: transform;
 }

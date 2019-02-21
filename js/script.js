@@ -111,7 +111,7 @@ map.on('load', function() {
         + popupIcon[type] + " "  + type + '</li>' 
         + '<li><div class="colour-key" style="background-color: ' + colors[impactTag]+ '; margin-right: 5px;"></div>' + impact + '</li></ul><p class="summary">' 
         + summary + '</p><p class="citation"><a href="'
-        + feature.properties['url'] + '" target="_blank">' + feature.properties['citation1'] + "</a> " + feature.properties['citation2'] + '</p>'))
+        + feature.properties['url'] + '" target="_blank">' + feature.properties['citation1'] + "</a><span class='citation2'> " + feature.properties['citation2'] + '</span></p>'))
         .addTo(map);
 
     });

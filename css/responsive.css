@@ -48,6 +48,22 @@
         display: none;
     }
 
+    .marker {
+        width: 25px;
+        height: 25px;
+    }
+
+    .marker-icon {
+        width: 15px;
+        height: 15px;
+        margin-top: 2px;
+    }
+
+    .marker i {           
+        margin-top: 5.5px;
+        font-size: 13px;
+    }
+
 }
 
 @media all and (max-width: 570px) {

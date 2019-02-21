@@ -9,6 +9,43 @@ if (!mapboxgl.supported()) {
     });
 }
 
+let screenWidth = window.innerWidth;
+
+let boundsMobile = [
+    [ -100, -70],[120, 85]
+]
+
+let boundsLaptop = [
+    [ -160, -70],[160, 90]
+]
+
+let boundsDesktop = [
+    [ -188, -75],[90, 86]
+]
+
+let boundsRetina = [
+    [ -165, -65],[91, 78]
+]
+
+function getBounds () {
+    if (screenWidth > 1400) {
+        return boundsRetina
+    }
+    else if (screenWidth > 1024 && screenWidth < 1400) {
+        return boundsDesktop
+    } 
+    else if (1024 > screenWidth && screenWidth > 850) {
+        return boundsLaptop
+    } else {
+        return boundsMobile
+    }
+}
+
+var bounds = getBounds();
+
+// resize map for the screen
+map.fitBounds(bounds, {padding: 10});
+
 var icons = {
     "Heat": "fas fa-thermometer-full",
     "Sunshine": "fas fa-sun",

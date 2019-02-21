@@ -1,0 +1,15 @@
+@media all and (max-width: 570px) {
+
+    #map {
+        height: 500px;
+    }
+
+}
+
+@media all and (max-width: 414px) {
+
+    #map {
+        height: 500px;
+    }
+
+}

@@ -957,7 +957,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 107,34 ]
+       "coordinates":  [ 108,34 ]
     },
     "properties": {
     "location":"Central eastern China",
@@ -2181,7 +2181,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -58.3,34.2 ]
+       "coordinates":  [ -57.552,-31.54 ]
     },
     "properties": {
     "location":"Uruguay river basin",

@@ -132,6 +132,15 @@ map.on('load', function() {
         summary = summary.substr(1, summary.length-2);
         summary = "\u201c" + summary + "\u201d";
 
+        let url = feature.properties['link'];
+        let citation1 = feature.properties['citation1'];
+        let substr = "pdf";
+
+        if (url.indexOf(substr) !== -1) {
+            citation1 = citation1 + " [pdf]";
+            console.log(citation1);
+        }
+
         // create a HTML element for each feature
         var el = document.createElement('div');
         el.className = 'marker ' + typeTag + " " + impactTag + " " + year;
@@ -150,7 +159,7 @@ map.on('load', function() {
         + popupIcon[type] + " "  + type + '</li>' 
         + '<li><div class="colour-key" style="background-color: ' + colors[impactTag]+ '; margin-right: 5px;"></div>' + impact + '</li></ul><p class="summary">' 
         + summary + '</p><p class="citation"><a href="'
-        + feature.properties['url'] + '" target="_blank">' + feature.properties['citation1'] + "</a><span class='citation2'> " + feature.properties['citation2'] + '</span></p>'))
+        + url + '" target="_blank">' + citation1 + "</a><span class='citation2'> " + feature.properties['citation2'] + '</span></p>'))
         .addTo(map);
 
     });

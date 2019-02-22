@@ -238,10 +238,6 @@ button:focus {
     outline:0;
 }
 
-/* button:active {
-    transform: scale(0.99);
-} */
-
 li {
     font-size: 12.5px;
     float: left;

@@ -58,7 +58,8 @@ var icons = {
     "Atmosphere": "fas fa-cloud",
     "Ecosystem function": "fas fa-seedling",
     "Coral bleaching": "fas fa-fish",
-    "El Nino": "fas fa-globe-asia"
+    "El Nino": "fas fa-globe-asia",
+    "River flow": "fas fa-water"
 };
 
 var typeTags = {
@@ -73,7 +74,8 @@ var typeTags = {
     "Atmosphere": "cloud",
     "Ecosystem function": "eco",
     "Coral bleaching": "coral",
-    "El Nino": "nino"
+    "El Nino": "nino",
+    "River flow": "river"
 };
 
 var impactTags = {
@@ -95,7 +97,8 @@ var popupIcon = {
     "Atmosphere": "<i class='fas fa-cloud'></i>",
     "Ecosystem function": "<i class='fas fa-seedling'></i>",
     "Coral bleaching": "<img class='popup-icon' src='img/coral-dark.svg'></img>",
-    "El Nino": "<i class='fas fa-globe-asia'></i>"
+    "El Nino": "<i class='fas fa-globe-asia'></i>",
+    "River flow": "<i class='fas fa-water'></i>"
 }
 
 var colors = {
@@ -128,7 +131,6 @@ map.on('load', function() {
         let summary = feature.properties['summary'];
         summary = summary.substr(1, summary.length-2);
         summary = "\u201c" + summary + "\u201d";
-
 
         // create a HTML element for each feature
         var el = document.createElement('div');
@@ -216,7 +218,7 @@ map.on('load', function() {
     function filterMap () {
 
         // GATHER DATA ON CHECKBOXES
-        let checkboxes = ["human", "natural", "unsure", "cloud", "cold", "coral", "drought", "eco", "nino", "heat", "ocean", "flood", "storm", "sun", "fire"];
+        let checkboxes = ["human", "natural", "unsure", "cloud", "cold", "coral", "drought", "eco", "nino", "heat", "ocean", "flood", "river", "storm", "sun", "fire"];
 
         let selected = [];
         $('input:checked').each(function() {

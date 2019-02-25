@@ -2096,7 +2096,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -91.867805,31.169546 ]
+       "coordinates":  [ -92,31.169546 ]
     },
     "properties": {
     "location":"Louisiana",
@@ -4351,6 +4351,23 @@ var geojson = {
     "citation2":"Water Resources Research, 53 (3), 2404-2418, DOI:10.1002/2016WR019638",
     "year":2017,
     "link":"https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016WR019638"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91,31.169546 ]
+    },
+    "properties": {
+    "location":"Louisiana",
+    "type":"Rain & flooding",
+    "impact":"More severe or more likely to occur",
+    "summary":"\"These simulations suggest that ~20% of the 4 day precipitation that fell on Louisiana (average of detrend and double trend) could have been augmented by climate warming trends.\"",
+    "citation1":"Wang, S-Y. et al., (2016)",
+    "citation2":"Geophys. Res. Lett, 44 (23), 805-11,814, DOI: 10.1002/2016GL071460",
+    "year":2016,
+    "link":"https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016GL071460"
     }
   }
 ]

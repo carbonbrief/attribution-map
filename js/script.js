@@ -5,12 +5,14 @@ if (!mapboxgl.supported()) {
 } else {
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
-        //style: 'mapbox://styles/rospearce/cjskgftrp4a9f1fpfbbgkmtlq',
+        // style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
+        style: 'mapbox://styles/rospearce/cjskgftrp4a9f1fpfbbgkmtlq',
         center: [8, 20],
         zoom: 1.5
     });
 }
+
+map.scrollZoom.disable();
 
 let screenWidth = window.innerWidth;
 
@@ -141,7 +143,6 @@ map.on('load', function() {
 
         if (url.indexOf(substr) !== -1) {
             citation1 = citation1 + " [pdf]";
-            console.log(citation1);
         }
 
         // create a HTML element for each feature

@@ -532,7 +532,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -43,12 ]
+       "coordinates":  [ -47,13 ]
     },
     "properties": {
     "location":"Global",
@@ -549,7 +549,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -42,12 ]
+       "coordinates":  [ -45.5,13 ]
     },
     "properties": {
     "location":"Global",
@@ -787,7 +787,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -41,12 ]
+       "coordinates":  [ -44,13 ]
     },
     "properties": {
     "location":"Global",
@@ -804,7 +804,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -40,12 ]
+       "coordinates":  [ -42.5,13 ]
     },
     "properties": {
     "location":"Global",
@@ -2300,7 +2300,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 145,-34 ]
+       "coordinates":  [ 144,-34 ]
     },
     "properties": {
     "location":"Southeast Australia",
@@ -2470,7 +2470,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 144,-34 ]
+       "coordinates":  [ 145,-34 ]
     },
     "properties": {
     "location":"South eastern Australia",
@@ -2997,7 +2997,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -156,1 ]
+       "coordinates":  [ -156.5,3 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -3014,7 +3014,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -155,1 ]
+       "coordinates":  [ -155,3 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -3473,7 +3473,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -156,0 ]
+       "coordinates":  [ -156.5,0 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -3507,7 +3507,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -154,0 ]
+       "coordinates":  [ -153.5,0 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -3524,7 +3524,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -156,-1 ]
+       "coordinates":  [ -155,-3 ]
     },
     "properties": {
     "location":"Central equatorial Pacific Ocean",
@@ -3575,7 +3575,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -39,12 ]
+       "coordinates":  [ -41,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3592,7 +3592,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -38,12 ]
+       "coordinates":  [ -39.5,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3643,7 +3643,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -37,12 ]
+       "coordinates":  [ -38,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3660,7 +3660,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -47,32 ]
+       "coordinates":  [ -48,33 ]
     },
     "properties": {
     "location":"Northern Hemisphere",
@@ -3677,7 +3677,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -36,12 ]
+       "coordinates":  [ -36.5,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3694,7 +3694,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -35,12 ]
+       "coordinates":  [ -35,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3711,7 +3711,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -34,12 ]
+       "coordinates":  [ -33.5,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3728,7 +3728,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -46,32 ]
+       "coordinates":  [ -46.5,33 ]
     },
     "properties": {
     "location":"Northern Hemisphere",
@@ -3745,7 +3745,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -45,32 ]
+       "coordinates":  [ -45,33 ]
     },
     "properties": {
     "location":"Europe, North America, Asia, Australia, and the Northern Hemisphere",
@@ -3762,7 +3762,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -33,12 ]
+       "coordinates":  [ -32,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3779,7 +3779,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -32,12 ]
+       "coordinates":  [ -30.5,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3796,7 +3796,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -31,12 ]
+       "coordinates":  [ -29,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3813,7 +3813,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -30,12 ]
+       "coordinates":  [ -27.5,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3830,7 +3830,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -29,12 ]
+       "coordinates":  [ -26,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3847,7 +3847,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -28,12 ]
+       "coordinates":  [ -24.5,13 ]
     },
     "properties": {
     "location":"Global",
@@ -3898,7 +3898,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -46,30 ]
+       "coordinates":  [ -46.5,30 ]
     },
     "properties": {
     "location":"Northern Hemisphere",
@@ -3983,7 +3983,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -34,10 ]
+       "coordinates":  [ -33.5,10 ]
     },
     "properties": {
     "location":"Global",
@@ -4119,7 +4119,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -35,8 ]
+       "coordinates":  [ -35,7 ]
     },
     "properties": {
     "location":"Global",
@@ -4306,7 +4306,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -46,28 ]
+       "coordinates":  [ -46.5,27 ]
     },
     "properties": {
     "location":"Northern Hemisphere",
@@ -4323,7 +4323,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -45,28 ]
+       "coordinates":  [ -45,27 ]
     },
     "properties": {
     "location":"Northern Hemisphere",

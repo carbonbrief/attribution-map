@@ -6,7 +6,7 @@ if (!mapboxgl.supported()) {
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
-        // style: 'mapbox://styles/rospearce/cjskgftrp4a9f1fpfbbgkmtlq',
+        //style: 'mapbox://styles/rospearce/cjskgftrp4a9f1fpfbbgkmtlq',
         center: [8, 20],
         zoom: 1.5
     });

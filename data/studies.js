@@ -96,7 +96,7 @@ var geojson = {
     "location":"Russia",
     "type":"Heat",
     "impact":"More severe or more likely to occur",
-    "summary":"\"The difference in conclusion between these two papers illustrates the importance of specifying precisely what question is being asked in addressing the issue of attribution of individual weather events to external drivers of climate.\"",
+    "summary":"\"Here we use the results from a large ensemble simulation experiment with an atmospheric general circulation model to show that…the same event can be both mostly internally‐generated in terms of magnitude and mostly externally‐driven in terms of occurrence‐probability.\"",
     "citation1":"Otto, F. et al., (2012)",
     "citation2":"Geophysical Research Letters, 39, L04702",
     "year":2012,
@@ -294,7 +294,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 6,49 ]
+       "coordinates":  [ 5,48 ]
     },
     "properties": {
     "location":"Western Europe",
@@ -757,7 +757,7 @@ var geojson = {
     },
     "properties": {
     "location":"UK",
-    "type":"Heat",
+    "type":"Sunshine",
     "impact":"More severe or more likely to occur",
     "summary":"\"Extreme winter sunshine in the United Kingdom, as observed in the record high 2014/15 season, has become more than 1.5 times more likely to occur under the influence of anthropogenic forcings.\"",
     "citation1":"Christidis, N. et al., (2016)",
@@ -1012,7 +1012,7 @@ var geojson = {
     },
     "properties": {
     "location":"Central US",
-    "type":"Heat",
+    "type":"Drought",
     "impact":"No discernible human influence",
     "summary":"\"The implication is that human alteration of the atmospheric composition may have had little effect on the frequency of low-precipitation periods.\"",
     "citation1":"Rupp, D. et al., (2013)",
@@ -1076,11 +1076,11 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 6,47 ]
+       "coordinates":  [ 6,48 ]
     },
     "properties": {
     "location":"Western Europe",
-    "type":"Drought",
+    "type":"Heat",
     "impact":"Insufficient data/inconclusive",
     "summary":"\"High interannual correlations between observed and analog temperatures confirm that the North Atlantic dynamics remains the main driver of European temperature variability, especially in wintertime.\"",
     "citation1":"Cattiaux, J. et al., (2012)",
@@ -1184,7 +1184,7 @@ var geojson = {
     "location":"East Africa ",
     "type":"Drought",
     "impact":"More severe or more likely to occur",
-    "summary":"\"Comparing these modeled distributions to the observed rainfall, no evidence was found for human influence on the 2010 short rains, with their failure being affected by La Niña.\"",
+    "summary":"\"Human influence was found to increase the probability of long rains as dry as, or drier than, 2011.\"",
     "citation1":"Lott, F. et al., (2013)",
     "citation2":"Geophysical Research Letters, 40 (6), 1177-1181",
     "year":2013,
@@ -1371,7 +1371,7 @@ var geojson = {
     "location":"Southern Africa",
     "type":"Drought",
     "impact":"More severe or more likely to occur",
-    "summary":"\"Over Southern Africa, we show that unusually dry austral summers as occurred during 2002/2003 have become more likely, whereas unusually wet austral summers like that of 1999/2000 have become less likely due to anthropogenic climate change.\"",
+    "summary":"\"Over Southern Africa, we show that unusually dry austral summers as occurred during 2002/2003 have become more likely…due to anthropogenic climate change.\"",
     "citation1":"Bellprat, O. et al., (2015)",
     "citation2":"Weather and Climate Extremes, 9, 36-46, doi:10.1016/j.wace.2015.07.001",
     "year":2015,
@@ -2356,7 +2356,7 @@ var geojson = {
     "properties": {
     "location":"UK",
     "type":"Rain & flooding",
-    "impact":"No discernible human influence",
+    "impact":"Insufficient data/inconclusive",
     "summary":"\"Extreme winter rainfall in the United Kingdom becomes eight times more likely when the atmospheric circulation resembles winter 2013/14, whereas anthropogenic influence is only discernible in extremes with a shorter duration.\"",
     "citation1":"Cristidis, N. & Stott, P., (2015)",
     "citation2":"Bull. Amer. Meteor. Soc., 96 (12), S46-S50.",
@@ -2816,7 +2816,7 @@ var geojson = {
     "location":"North America, Central America & the Caribbean",
     "type":"Cold, snow & ice",
     "impact":"No discernible human influence",
-    "summary":"\"Despite severe cold waves and record-breaking extreme cold-day occurrences during 2015, no long-term increase in winter daily temperature extremes has occurred in the eastern United States—winters have become warmer and less variable.\"",
+    "summary":"\"There is no systematic trend in the number of extremely cold days, thus no evidence to suggest that the frequency or persistence of cold events is systematically changing.\"",
     "citation1":"Trenary, L. et al., (2016)",
     "citation2":"Bull. Amer. Meteor. Soc., 97 (12), S31-S35, doi:10.1175/BAMS-D-16-0156.1.",
     "year":2016,
@@ -2916,7 +2916,7 @@ var geojson = {
     },
     "properties": {
     "location":"Off Southern Australia",
-    "type":"Oceans",
+    "type":"Atmosphere",
     "impact":"More severe or more likely to occur",
     "summary":"\"It is likely that human influences on climate increased the odds of the extreme high pressure anomalies south of Australia in August 2014 that were associated with frosts, lowland snowfalls and reduced rainfall.\"",
     "citation1":"Grose, M. et al., (2015)",
@@ -3137,7 +3137,7 @@ var geojson = {
     },
     "properties": {
     "location":"South Dakota",
-    "type":"Storm",
+    "type":"Cold, snow & ice",
     "impact":"Insufficient data/inconclusive",
     "summary":"\"An early October blizzard in South Dakota is determined to be climatologically anomalous. Climate models suggest that early autumn extreme snowfall events in western South Dakota are less likely due to anthropogenic climate change.\"",
     "citation1":"Edwards, L. et al., (2014)",
@@ -3422,7 +3422,7 @@ var geojson = {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 6,45 ]
+       "coordinates":  [ 6,46 ]
     },
     "properties": {
     "location":"Western Europe",

@@ -4369,6 +4369,23 @@ var geojson = {
     "year":2016,
     "link":"https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016GL071460"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25,-22 ]
+    },
+    "properties": {
+    "location":"Southern Africa",
+    "type":"Rain & flooding",
+    "impact":"Decrease, less severe or less likely to occur",
+    "summary":"\"Over Southern Africa, we show that…unusually wet austral summers like that of 1999/2000 have become less likely due to anthropogenic climate change.\"",
+    "citation1":"Bellprat, O. et al., (2015)",
+    "citation2":"Weather and Climate Extremes, 9, 36-46, doi:10.1016/j.wace.2015.07.001",
+    "year":2015,
+    "link":"http://www.sciencedirect.com/science/article/pii/S2212094715300086?via%3Dihub"
+    }
   }
 ]
 }

@@ -8,7 +8,8 @@ if (!mapboxgl.supported()) {
         // style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
         style: 'mapbox://styles/rospearce/cjskgftrp4a9f1fpfbbgkmtlq',
         center: [8, 20],
-        zoom: 1.5
+        zoom: 1.5,
+        maxZoom: 12
     });
 }
 

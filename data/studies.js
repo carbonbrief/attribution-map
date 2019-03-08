@@ -1760,8 +1760,8 @@ var geojson = {
     },
     "properties": {
     "location":"Europe",
-    "type":"Rain & flooding",
-    "impact":"Decrease, less severe or less likely to occur",
+    "type":"Drought",
+    "impact":"More severe or more likely to occur",
     "summary":"\"Our study suggests that record-breaking low precipitation over parts of western Europe during December 2016 may have been favored by an unprecedented reduction of Arctic sea ice, likely driven by anthropogenic climate change.\"",
     "citation1":"Acosta Navarro, J. et al., (2018)",
     "citation2":"Bull. Amer. Meteor. Soc., doi:10.1175/BAMS-D-18-0097.1",
@@ -1794,7 +1794,7 @@ var geojson = {
     },
     "properties": {
     "location":"Eastern Kenya & Southern Somalia",
-    "type":"Rain & flooding",
+    "type":"Drought",
     "impact":"Insufficient data/inconclusive",
     "summary":"\"The results indicate that non-ENSO SST variations substantially increased the risk of a dry event in 2012...It is worth noting, however, that the procedure used here does not necessarily indicate an anthropogenic attribution.\"",
     "citation1":"Funk, C. et al., (2013)",
@@ -4385,6 +4385,40 @@ var geojson = {
     "citation2":"Weather and Climate Extremes, 9, 36-46, doi:10.1016/j.wace.2015.07.001",
     "year":2015,
     "link":"http://www.sciencedirect.com/science/article/pii/S2212094715300086?via%3Dihub"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.127,51.507 ]
+    },
+    "properties": {
+    "location":"London",
+    "type":"Heat",
+    "impact":"More severe or more likely to occur",
+    "summary":"\"Out of the estimated ~315 and ~735 summer deaths attributed to the heatwave event in Greater London and Central Paris, respectively, 64 (±3) deaths were attributable to anthropogenic climate change in London, and 506 (±51) in Paris.\"",
+    "citation1":"Mitchell, d. et al., (2016)",
+    "citation2":"Environ. Res. Lett. 11 074006",
+    "year":2016,
+    "link":"https://iopscience.iop.org/article/10.1088/1748-9326/11/7/074006"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.352,48.856 ]
+    },
+    "properties": {
+    "location":"Paris",
+    "type":"Heat",
+    "impact":"More severe or more likely to occur",
+    "summary":"\"Out of the estimated ~315 and ~735 summer deaths attributed to the heatwave event in Greater London and Central Paris, respectively, 64 (±3) deaths were attributable to anthropogenic climate change in London, and 506 (±51) in Paris.\"",
+    "citation1":"Mitchell, d. et al., (2016)",
+    "citation2":"Environ. Res. Lett. 11 074006",
+    "year":2016,
+    "link":"https://iopscience.iop.org/article/10.1088/1748-9326/11/7/074006"
     }
   }
 ]

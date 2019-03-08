@@ -3445,7 +3445,7 @@ var geojson = {
     "location":"Europe",
     "type":"Atmosphere",
     "impact":"No discernible human influence",
-    "summary":"December 2015 in France was an extreme of circulation and temperature. Both circulation and climate change partly explain the 4C anomaly. We found no link between climate change and circulation.",
+    "summary":"\"December 2015 in France was an extreme of circulation and temperature. Both circulation and climate change partly explain the 4C anomaly. We found no link between climate change and circulation.\"",
     "citation1":"Jézéquel, A. et al., (2018)",
     "citation2":"Bull. Amer. Meteor. Soc., 99 (1), S76-S79, doi10.1175/BAMS-D-17-0103.1.",
     "year":2018,

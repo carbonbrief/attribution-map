@@ -1,2 +1,3 @@
 # attribution-map
-An update of our 2017 map
+Mapped: How climate change affects extreme weather around the world
+Update on the 2019 version 
